@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel = "stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-bar">Your Library</div>
+    <div class="button"><button onclick="openForm()">Add Book</button></div>
+    <div class="form-popup" id="myForm">
+        <form  class="form-container" onsubmit="return false;">
+            <h1>Enter book info</h1>
+            <label for="Title"><b>Title</b></label>
+            <input type = "text" placeholder="Enter Book Title" id="title" name="Title" required>
+            <label for="Author"><b>Author</b></label>
+            <input type = "text" placeholder="Enter Book's Author" id="author" name="Author" required>
+            <label for="Pages"><b>Pages</b></label>
+            <input type = "number" placeholder="Enter the number of pages" id="pages" name="Pages" required>
+            <label for="Status"><b>Status</b></label>
+            <select id="status">
+                <option value = "Read">Read</option>
+                <option value = "Pending">Pending</option>
+            </select>
+            <!--<input type = "text" placeholder="Enter reading status" id="status" name="Status" required>-->
+            <button type = "submit" class="btn" onclick="addBook()">Add Book</button>
+            <button type = "submit" class = "btn_cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    <div class = "table">
+        <table id = "libraryTable">
+            <thead>
+                
+                <td>Title</td>
+                <td>Author</td>
+                <td>Pages</td>
+                <td>Status</td>
+                <td>Entry Action</td>
+            </thead>
+            <tr>
+
+            </tr>
+        </table>
+        <h2 id="warning"></h2>
+    </div>
+    <script src = "script2.js"></script>
+
+</body>
+</html>
