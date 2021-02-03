@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, violet, indigo,blue,green);
+}
+.top-bar{
+    padding: 25px;
+    background-color: rgb(0,0,0,0.5);
+    color: white;
+    text-align: center;
+    font-size:xx-large;
+    font-family:fantasy;
+}
+.button{
+    display: grid;
+    justify-content: center;
+    margin-top: 100px;
+}
+.button > button{
+    background-color: rgb(0,0,0,0.5);
+    color: white;
+    width: 85px;
+    height: 75px;
+}
+.button > button:hover{
+    background-color: rgb(255,255,255,0.5);
+    color: black;
+}
+.form-popup{
+    display: none;
+    position: absolute;
+    border: 3px solid whitesmoke;
+    color: white;
+    margin-left: 38%;
+}
+.form-container{
+    max-width: 300px;
+    padding: 45px;
+    background-color: rgb(0,0,0);
+    justify-content: center;
+}
+.form-container input[type=text], .form-container input[type=number], #status {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #f1f1f1;
+}
+.form-container .btn {
+    background-color:   rgb(0,0,0,0.5); ;
+    color: white;
+    padding: 5px;
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  .form-container .btn_cancel {
+    background-color: red;
+    padding: 5px;
+    opacity: 0.75;
+    width: 100%;
+  }
+  .form-container .btn:hover{
+    background-color: rgb(255,255,255,0.25);
+    color: white;
+  }
+  .form-container .btn_cancel:hover{
+    background-color: red;
+    opacity: 1;
+  }
+.table{
+    display: flex;
+    justify-content: center;
+    align-content: center;   
+    margin-top: 100px; 
+}
+.libraryTable{
+    max-width: 700px;
+}
+.libraryTable >table,td,tr{
+    border: 1px solid white;
+    color: white;
+    padding: 25px;
+    width: 100px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.table>#warning{
+    color: white;
+    font-family: fantasy;
+    text-align: center;
+}
+.delbtn{
+    background-color: rgb(0,0,0,0.5);
+    color: white;
+    width: 75px;
+    border: 3px solid white;
+}
+.delbtn:hover{
+    background-color: rgb(255,255,255,0.9);
+    color: black;
+}
+.idx{
+    display: none;
+}
